@@ -1,0 +1,24 @@
+<h1 class="fs-4">Produtos</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Imagem</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Preço</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+    <tr>
+      <th scope="row">{{@index}}</th>
+      <td><img src="{{this.image}}" alt="{{this.name}}" width="60"></td>
+      <td>{{this.name}}</td>
+      <td>R${{this.price}}</td>
+      <td><a href="/products/{{this._id}}" class="btn btn-primary btn-sm">Detalhes</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

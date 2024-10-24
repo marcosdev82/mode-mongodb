@@ -1,0 +1,23 @@
+<h1 class="fs-4">Criar produto</h1>
+
+<form class="row g-3" action="/products/create" method="POST">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+      <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Notebook">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Preço</label>
+      <input type="txt" class="form-control" name="price" id="exampleFormControlInput1" placeholder="105.00">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Imagem</label>
+      <input type="txt" class="form-control" name="image" id="exampleFormControlInput1" placeholder="">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1"class="form-label">Descrição</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1"  name="description" rows="3"></textarea>
+    </div>
+     <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </div>
+</form>
