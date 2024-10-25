@@ -1,0 +1,26 @@
+<h1 class="fs-4">Criar produto</h1>
+
+<form class="row g-3" action="/products/edit" method="POST">
+
+    <input type="hidden" name="id" value="{{product._id}}">
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+      <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Notebook" value="{{produt.name}}">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Preço</label>
+      <input type="txt" class="form-control" name="price" id="exampleFormControlInput1" placeholder="105.00" value="{{produt.price}}">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Imagem</label>
+      <input type="txt" class="form-control" name="image" id="exampleFormControlInput1" placeholder="" value="{{product.image}}">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1"class="form-label">Descrição</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1"  name="description" rows="3">{{product.description}}</textarea>
+    </div>
+     <div class="mb-3">
+        <button type="submit" class="btn btn-success">Atualizar</button>
+    </div>
+</form>

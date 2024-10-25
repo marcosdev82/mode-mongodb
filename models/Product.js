@@ -40,6 +40,11 @@ class Product {
         return product
     }
 
+    static async removeProductById(id) {
+        await conn.db().collection('products').deleteOne({_id: new ObjectId(id)})
+        return;
+    }
+
 }
 
 module.exports = Product
